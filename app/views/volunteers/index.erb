@@ -1,0 +1,10 @@
+<h1>Volunteer Index:</h1>
+<% @volunteers.each do |volunteer| %>
+<tbody>
+  <td>
+  <tr><%= volunteer.first_name %></tr>
+  <tr><%= volunteer.last_name %></tr>
+  <tr><%= volunteer.email_address %></tr>
+  </td>
+<% end %>
+</tbody>

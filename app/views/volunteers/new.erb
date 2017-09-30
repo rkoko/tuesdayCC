@@ -1,0 +1,31 @@
+<h1>Volunteer Form </h1>
+<%= form_for @volunteer do |f| %>
+
+  <%= f.label :first_name %><br>
+  <%= f.text_field :first_name %><br>
+
+  <%= f.label :last_name %><br>
+  <%= f.text_field :last_name %><br>
+
+  <%= f.label :middle_initial %><br>
+  <%= f.text_field :middle_initial %><br>
+
+  <%= f.label :birth_year %><br>
+  <%= f.number_field :birth_year %><br>
+
+  <%= f.label :birth_month %><br>
+  <%= f.number_field :birth_month %><br>
+
+  <%= f.label :birth_day %><br>
+  <%= f.number_field :birth_day %><br>
+
+  <%= f.label :political_interest %><br>
+  <%= f.text_field :political_interest %><br>
+
+  <%= f.label :email_address %><br>
+  <%= f.text_field :email_address %><br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
