@@ -1,5 +1,5 @@
 <% flash.each do |name, msg| -%>
-  <%= content_tag :div, msg, class: name %>
+  <b><%= content_tag :div, msg, class: name  %> </b>
 <% end -%>
 <h1>Volunteer Form </h1>
 <%= form_for @volunteer do |f| %>

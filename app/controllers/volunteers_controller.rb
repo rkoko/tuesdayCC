@@ -10,7 +10,8 @@ class VolunteersController < ApplicationController
       redirect_to volunteer_path(@volunteer)
     else
        flash[:error] = @volunteer.errors.full_messages.first if @volunteer.errors.any?
-       render 'new'
+       redirect_to new_volunteer_path
+
     end
   end
 
