@@ -9,8 +9,8 @@ class VolunteersController < ApplicationController
     if @volunteer.save
       redirect_to volunteer_path(@volunteer)
     else
-      flash[:error]= @volunteer.errors.full_messages.first if @volunteer.errors.any?
-      render 'new'
+       flash[:error] = @volunteer.errors.full_messages.first if @volunteer.errors.any?
+       render 'new'
     end
   end
 
